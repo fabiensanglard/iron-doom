@@ -4,3 +4,13 @@ Iron Doom is a Doom source port developed entirely in Rust, focusing on code rea
 the original game. Built on the Chocolate Doom codebase, the project aims to stay true to the classic experience while
 providing a modern, stable implementation. By addressing and fixing many of the bugs in the original engine, Iron Doom
 offers a more robust version of Vanilla Doom, all while maintaining its authentic feel.
+
+![Iron Doom](https://github.com/user-attachments/assets/8dca0ae1-cc86-4fd1-bcf8-6c8a47ce854c)
+
+## Supported Platforms
+
+| platform | is supported? |
+|----------|---------------|
+| Windows  | yes |
+| Linux    | yes |
+| MacOS    | yes |
