@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/rust-doom.iml" filepath="$PROJECT_DIR$/.idea/rust-doom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/iron-doom.iml" filepath="$PROJECT_DIR$/.idea/iron-doom.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/crates/automap/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/cli/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/common/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/exit/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/game-state/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/level/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/rand/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/screen-melt/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/title-screen/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/wad/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/window/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/world-view/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/macros/sys-fail/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,14 @@
+[package]
+name = "title-screen"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = { workspace = true }
+bevy = { workspace = true }
+derive_more = { workspace = true }
+exit = { path = "../exit" }
+game-state = { path = "../game-state" }
+level = { path = "../level" }
+wad = { path = "../wad" }
+window = { path = "../window" }

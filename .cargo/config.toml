@@ -1,5 +1,5 @@
 [env]
 WORKSPACE_NAME = { value = "Iron Doom", force = true }
 WORKSPACE_TARNAME = { value = "iron-doom", force = true }
-WORKSPACE_VERSION = { value = "1.0.0", force = true }
+WORKSPACE_VERSION = { value = "0.1.0", force = true }
 WORKSPACE_PREFIX = { value = "iron-", force = true }

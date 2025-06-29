@@ -1,13 +1,57 @@
-[workspace]
+[package]
+name = "iron-doom"
+version = "0.1.0"
+edition = "2024"
+build = "build/build.rs"
 
+[package.metadata.winresource]
+ProductName = "Iron Doom"
+InternalName = "iron-doom"
+FileDescription = "Iron Doom 0.1.0"
+LegalCopyright = "Copyright (C) 1993-2025. Licensed under GNU General Public License, version 3"
+
+[target.'cfg(windows)'.build-dependencies]
+winresource = "0.1.19"
+
+[dependencies]
+anyhow = { workspace = true }
+bevy = { workspace = true }
+cli = { path = "crates/cli" }
+exit = { path = "crates/exit" }
+game-state = { path = "crates/game-state" }
+level = { path = "crates/level" }
+rand = { path = "crates/rand" }
+screen-melt = { path = "crates/screen-melt" }
+title-screen = { path = "crates/title-screen" }
+wad = { path = "crates/wad" }
+window = { path = "crates/window" }
+world-view = { path = "crates/world-view" }
+
+[workspace]
 members = [
-    "doom",
-    "engine_core",
+    "crates/*",
+    "macros/*",
 ]
 resolver = "2"
 
 [workspace.dependencies]
-bevy = { version = "0.14.0", default-features = false, features = ["bevy_state"] }
-derive_more = "0.99.18"
-rustc-hash = "2.0.0"
-sdl2 = { version = "0.37.0", default-features = false }
+anyhow = "1.0.96"
+array-init = "2.1.0"
+bevy = { version = "0.15.3", default-features = false, features = ["bevy_state"] }
+derive_more = { version = "2.0.1" }
+moonshine-kind = "0.2.1"
+paste = "1.0.15"
+sdl2 = "0.37.0"
+
+# Enable a large amount of optimization in the dev profile for dependencies.
+[profile.dev.package."*"]
+opt-level = 3
+
+# Enable more optimization in the release profile at the cost of compile time.
+[profile.release]
+# Compile the entire crate as one unit.
+# Slows compile times, marginal improvements.
+codegen-units = 1
+# Do a second optimization pass over the entire program, including dependencies.
+# Slows compile times, marginal improvements.
+lto = "thin"
